@@ -1,0 +1,94 @@
+#tasklist {
+    list-style: none;
+    padding: 0;
+   margin-top: 20px;
+   width: 100%;
+}
+
+#tasklist li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#tasklist li div {
+    display: flex;
+    gap: 8px;
+}
+#tasklist button{
+    width: 70px;
+    padding: 10px;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+body{
+    font-family: Arial,sans-serif;
+    padding: 40px;
+    background: linear-gradient( -45deg,
+   #384996,
+   #1e0338,
+   #236170,
+   #164752
+    );
+    background-size: 300% 300%;
+    animation: backgroundAnimation 8s ease-in-out infinite;
+    margin: 0px;
+}
+@keyframes backgroundAnimation {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+.container{
+    width: 500px;
+    max-width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+}
+#input-box{
+display: flex;
+gap: 10px;
+}
+input {
+font-size: 16px;
+padding: 10px;
+flex: 1;
+}
+button{
+    padding: 10px 15px;
+    cursor: pointer;
+
+   /* align-items: center;
+    justify-content: space-between;*/
+}
+ul{
+    list-style: none;
+    padding: 0px;
+    margin-top: 20px;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    background: whitesmoke;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+}
