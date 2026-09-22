@@ -5,6 +5,11 @@ let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 console.log(tasks);
 renderTasks();
 addbtn.addEventListener("click", addTask);
+input.addEventListener("keypress",function(e){
+    if(e.key ==="Enter"){
+        addTask();
+    }
+});
 function addTask() {
     const tasktext = input.value.trim();
     if (tasktext === "") {
